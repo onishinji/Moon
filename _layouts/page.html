@@ -1,5 +1,6 @@
 ---
 layout: compress
+background: half
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -13,13 +14,19 @@ layout: compress
     {% include nav.html %}
     <!-- Header -->
     <header class="header" role="banner">
-        <div class="wrapper animated fadeIn">
+        <div class="wrapper animated">
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
-                    <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
+                    <a class="btn zoombtn left" href="{{site.url}}">
                         <i class="fa fa-chevron-left"></i>
                     </a>
+                    <h1>{{ page.title }}</h1>
+                    {% if site.reading_time and page.reading_time == true %}
+                        <p class="reading-time">
+                          <i class="fa fa-clock-o"></i>
+                          {% include read-time.html %}
+                        </p><!-- /.entry-reading-time -->
+                    {% endif %}
                 </div>
                 {{ content }}
             </div>

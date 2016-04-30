@@ -1,13 +1,16 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Guillaume Chave
+bio:                "Réflexions et découvertes dans le monde des start-up"
+description:        "Réflexions et découvertes d'un développeur touche à tout"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/new_class.png'
 background:         'assets/img/placeholder-big.jpg'
-locale:             en_US
-url:                http://taylantatli.me/Moon
+background_alt:     'assets/img/placeholder-half.jpg'
+locale:             fr_FR
+url:                http://www.new-class.com
+
+paginate: 5
 
 # Jekyll
 permalink:          /:title/
@@ -19,36 +22,36 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+mathjax:            false
 sass:
   sass_dir:         _sass
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   new-class
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:
   #plus:            #username
-  #analytics:
+  analytics:        'UA-6489412-2'
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            username
-facebook:           username
-github:             username
+twitter:            dzdq
+facebook:           guillaume-chave
+github:             onishinji
 #stackoverflow:      123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:           username
 #xing:              username
-instagram:          username
+#instagram:          username
 #lastfm:             username
 #tumblr:             username
 #pinterest:         username
 #foursquare:        username
-steam:              username
+#steam:              dzdq
 #dribbble:          username
 #youtube:            username
 #soundcloud:        username
@@ -63,9 +66,10 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-paginate
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://twitter.com
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
